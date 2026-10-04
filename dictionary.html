@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary | English Database Dictionary</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-database"></i>
+            <span>ED<span>D</span></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="dictionary.html" class="active">Dictionary</a>
+            <a href="members.html">Members</a>
+            <a href="about.html">About</a>
+
+            <button class="theme-btn" onclick="toggleTheme()">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+<section class="page-header">
+    <span class="section-label">DATABASE VOCABULARY</span>
+    <h1>English <span>Dictionary</span></h1>
+    <p>
+        Temukan istilah Bahasa Inggris yang sering digunakan
+        dalam dunia database.
+    </p>
+</section>
+
+<section class="dictionary-section">
+
+    <div class="search-area">
+
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search database term..."
+                autocomplete="off"
+            >
+        </div>
+
+        <button class="stop-btn" onclick="stopSpeech()">
+            <i class="fa-solid fa-stop"></i>
+            Stop Voice
+        </button>
+
+    </div>
+
+    <div class="filter-area">
+
+        <button class="filter-btn active" data-category="All">
+            All
+        </button>
+
+        <button class="filter-btn" data-category="Basic Database">
+            Basic Database
+        </button>
+
+        <button class="filter-btn" data-category="SQL">
+            SQL
+        </button>
+
+        <button class="filter-btn" data-category="Database Structure">
+            Structure
+        </button>
+
+        <button class="filter-btn" data-category="Database Operations">
+            Operations
+        </button>
+
+        <button class="filter-btn" data-category="Database Security">
+            Security
+        </button>
+
+        <button class="filter-btn" data-category="Advanced Database">
+            Advanced
+        </button>
+
+    </div>
+
+    <div class="dictionary-info">
+        <span id="resultCount">40 istilah ditemukan</span>
+        <span>
+            <i class="fa-solid fa-volume-high"></i>
+            Klik speaker untuk mendengarkan
+        </span>
+    </div>
+
+    <div class="terms-grid" id="termsContainer"></div>
+
+    <div class="empty-state" id="emptyState">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <h2>Istilah tidak ditemukan</h2>
+        <p>Coba gunakan kata pencarian yang berbeda.</p>
+    </div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <div class="logo">
+                <i class="fa-solid fa-database"></i>
+                <span>English Database Dictionary</span>
+            </div>
+            <p>Project Database X RPL</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="dictionary.html">Dictionary</a>
+            <a href="members.html">Members</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 English Database Dictionary • Kelompok Database X RPL
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
